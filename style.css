@@ -1,0 +1,136 @@
+/* Luxury Product Widget Styles */
+.luxury-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.luxury-product {
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de cristal difuminado */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.luxury-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sale-banner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.product-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em; /* Título más pequeño */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.4em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.luxury-product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px; /* Borde redondeado de 24px */
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease; /* Efecto de push */
+}
+
+.luxury-product:hover img {
+    transform: scale(1.05); /* Efecto de push al pasar el cursor */
+}
+
+/* Popup styles */
+.mfp-content {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 24px; /* Bordes redondeados */
+    padding: 30px; /* Aumentar padding interno */
+    max-width: 700px; /* Hacer el rectángulo más grande */
+    margin: 20px auto; /* Reducir el margen de la caja de luz */
+}
+
+.mfp-bg {
+    background: rgba(0, 0, 0, 0.8); /* Fondo de la caja de luz oscuro */
+}
+
+.product-popup-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff; /* Fondo blanco */
+    border-radius: 24px; /* Bordes redondeados a 24px */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-popup-content img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.product-popup-details {
+    width: 50%;
+}
+
+.product-popup-details h2 {
+    font-size: 1.3em; /* Título más pequeño */
+    margin-bottom: 10px;
+}
+
+.product-popup-details .product-description {
+    margin: 15px 0;
+}
+
+.product-popup-details .product-price {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-popup-details .product-price del {
+    color: red; /* Precio original tachado en rojo */
+    margin-right: 10px;
+}
+
+.product-popup-details .button.add-to-cart-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.product-popup-details .button.add-to-cart-button:hover {
+    background-color: #005d8a;
+}
+
+/*Arturo Merchan | Merchan.Dev® 2025*/
